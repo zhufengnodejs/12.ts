@@ -7,5 +7,10 @@ module.exports = {
         "no-var":"error",
         "no-extra-semi":"error",
         "@typescript-eslint/indent":["error",2]
+    },
+    "parserOptions":{
+        "ecmaVersion":6,
+        "sourceType":"module",
+        "modules":true
     }
 }

@@ -5,16 +5,27 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint .  --ext .ts",
-    "eslint:fix": "eslint .  --ext .ts --fix"
+    "eslint:fix": "eslint .  --ext .ts --fix",
+    "test": "mocha"
   },
-  "pre-commit":["eslint"],
+  "pre-commit": [
+    "eslint"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^12.0.3",
+    "@types/sinon": "^7.0.12",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",
+    "chai": "^4.2.0",
     "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "sinon": "^7.3.2",
+    "ts-node": "^8.2.0",
     "typescript": "^3.4.5"
   },
   "dependencies": {
